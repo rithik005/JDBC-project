@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FreeFly | Flight Booking</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <span class="plane">✈</span>
+        Free<span>Fly</span>
+    </div>
+    <nav>
+        <a href="#booking"> Book Flight </a>
+        <a href="#bookings"> My Bookings </a>
+    </nav>
+</header>
+<section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="circle circle-one"></div>
+    <div class="circle circle-two"></div>
+    <div class="flying-plane">✈</div>
+    <div class="hero-content">
+        <div class="welcome">
+            <span class="line"></span>
+            <span> WELCOME TO FREEFLY </span>
+        </div>
+        <h1>
+            Explore The World.
+            <br>
+            <span>Your Journey Begins.</span>
+        </h1>
+        <p class="hero-text">
+            Fly beyond boundaries and discover
+            unforgettable destinations with a
+            simple and seamless booking experience.
+        </p>
+        <div class="hero-buttons">
+            <a href="#booking" class="primary-btn">
+                Book Your Flight
+                <span>→</span>
+            </a>
+            <a href="#bookings" class="secondary-btn"> View Bookings </a>
+        </div>
+        <div class="hero-stats">
+            <div>
+                <strong>120+</strong>
+                <small> Destinations </small>
+            </div>
+            <div>
+                <strong>50K+</strong>
+                <small> Happy Travelers </small>
+            </div>
+            <div>
+                <strong>24/7</strong>
+                <small> Support </small>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="booking" class="booking-section">
+    <div class="section-heading">
+        <div class="section-label"> FLIGHT RESERVATION </div>
+        <h2>
+            Book Your <span>Journey</span>
+        </h2>
+        <p>
+            Enter your travel details and reserve
+            your seat in just a few seconds.
+        </p>
+    </div>
+    <div class="booking-wrapper">
+        <div class="booking-image">
+            <div class="image-overlay">
+                <div class="destination-text">
+                    <span> TRAVEL WITH CONFIDENCE </span>
+                    <h3> The sky is <br> not the limit. </h3>
+                    <p>
+                        Your adventure starts
+                        with a single booking.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="booking-card">
+            <div class="card-header">
+                <div class="icon-box">
+                    ✈
+                </div>
+                <div>
+                    <h3> Flight Details </h3>
+                    <p> Complete your reservation </p>
+                </div>
+            </div>
+            <form id="flightForm">
+                <div class="form-row">
+                    <div class="input-group">
+                        <label> Passenger Name </label>
+                        <div class="input-box">
+                            <span>👤</span>
+                            <input
+                                type="text"
+                                id="passengerName"
+                                name="passengerName"
+                                placeholder="Enter passenger name"
+                                require>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label> Flight Number </label>
+                        <div class="input-box">
+                            <span>✈</span>
+                            <input
+                                type="text"
+                                id="flightNumber"
+                                name="flightNumber"
+                                placeholder="Example: SK101"
+                                required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-group">
+                        <label> From </label>
+                        <div class="input-box">
+                            <span>📍</span>
+                            <input
+                                type="text"
+                                id="source"
+                                name="source"
+                                placeholder="Departure city"
+                                required>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label> To </label>
+                        <div class="input-box">
+                            <span>📍</span>
+                            <input
+                                type="text"
+                                id="destination"
+                                name="destination"
+                                placeholder="Arrival city"
+                                required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-group">
+                        <label> Travel Date </label>
+                        <div class="input-box">
+                            <span>📅</span>
+                            <input
+                                type="date"
+                                id="travelDate"
+                                name="travelDate"
+                                required>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label> Seat Number </label>
+                        <div class="input-box">
+                            <span>💺</span>
+                            <input
+                                type="text"
+                                id="seatNumber"
+                                name="seatNumber"
+                                placeholder="Example: 12A"
+                                required>
+                        </div>
+                    </div>
+                </div>
+                <button
+                    type="submit"
+                    class="book-button">
+                    <span> Confirm Booking </span>
+                    <strong>
+                        →
+                    </strong>
+                </button>
+                <div id="message"></div>
+            </form>
+        </div>
+    </div>
+</section>
+<section id="bookings" class="booking-list">
+    <div class="section-heading">
+        <div class="section-label"> YOUR RESERVATIONS </div>
+        <h2> Booked <span>Flights</span> </h2>
+        <p>
+            Manage and view your confirmed
+            flight reservations.
+        </p>
+    </div>
+    <div class="table-card">
+        <div class="table-top">
+            <div>
+                <h3> Recent Bookings </h3>
+                <p> Your flight reservation history </p>
+            </div>
+            <div class="status-badge">
+                <span></span>
+                Active Reservations
+            </div>
+        </div>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Passenger</th>
+                        <th>Flight</th>
+                        <th>From</th>
+                        <th>To</th>
+                        <th>Date</th>
+                        <th>Seat</th>
+                    </tr>
+                </thead>
+                <tbody id="flightTable">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="footer-content">
+        <div class="footer-logo">
+            <span>✈</span>
+            Free<span>Fly</span>
+        </div>
+        <p> Your trusted flight booking system. </p>
+        <div class="footer-links">
+            <a href="#booking"> Book Flight </a>
+            <a href="#bookings"> My Bookings</a>
+        </div>
+        <div class="footer-line"></div>
+        <small> © 2026 FreeFly. All Rights Reserved. </small>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
